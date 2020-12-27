@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    height: 100%;
+}
+.first-page {
+    /*background: url(img/back_1.png) no-repeat;*/
+    background-size: cover;
+    height: 100%;
+    background-color: #d0ced1;
+}
+.header {
+    height: 100%;
+}
+.nav-content {
+    max-width: 1640px;
+    margin: 0 auto;
+    padding: 180px 134px 0 134px;
+}
+.content-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.whatson {
+    padding-left: 0px;
+}
+.first-page-content {
+    background: url(img/white_back.png) no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-size: cover;
+}
+.first-half-dates {
+    padding: 0 40px 0 40px;
+}
+.second-half-dates {
+    padding: 0 40px 0 40px;
+}
