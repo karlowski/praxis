@@ -1,28 +1,29 @@
 *{
     box-sizing: border-box;
+    margin: 0;
 }
 body {
-    margin: 0;
     height: 100%;
 }
-.first-page {
+.first-section {
+    height: 1080px;
+    background: url("img/back_1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #85689a;
     font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    height: 100%;
     letter-spacing: 0.2em;
 }
 .header {
-    margin: 0;
-    background-size: cover;
-    height: 100%;
+    padding-top: 17vh;
 }
 .nav-menu {
-    max-width: 1456px;
+    max-width: 71vw;
     margin: 0 auto;
-    padding: 10px 0px 0 0px;
+    padding-bottom: 5vh;
 }
 .nav-list {
-    font-size: 46px;
+    font-size: 3rem;
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -35,9 +36,9 @@ body {
     opacity: 0.8;
 }
 .header-content {
-    max-width: 1456px;
+    max-width: 71vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin: 0 auto;
 }
@@ -46,46 +47,58 @@ body {
     align-items: center;
     justify-content: center;
 }
+.arrow-left {
+    margin-right: 2vw;
+}
 .left-block {
-    font-size: 46px;
+    font-size: 2.875rem;
     color: #85689a;
     background-color: white;
-    padding: 65px 40px 65px 40px;
-    line-height: 1.5;
-    min-height: 480px;
-    min-width: 320px;
+    height: 44.4vh;
+    width: 16.67vw;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding-left: 2vw;
+    line-height: 7vh;
 }
 .center-block {
     box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.25);
     z-index: 2;
     position: relative;
+    width: 520px;
+    height: 688px;
 }
 .right-block {
-    font-size: 41px;
+    font-size: 2.5625rem;
     color: #85689a;
     background-color: white;
-    padding: 65px 40px 65px 0px;
-    line-height: 1.7;
-    min-height: 480px;
-    min-width: 320px;
-    text-align: right;
     z-index: 1;
+    height: 44.4vh;
+    width: 16.67vw;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: center;
+    text-align: right;
+    padding-right: 2vw;
+    line-height: 7vh;
 }
-#exhibition {
+.arrow-right {
+    margin-left: 2vw;
+}
+.current-exhibition {
     position: absolute;
     z-index: 4;
     margin: 0 auto;
     top: 45%;
-    left: -25%;
+    left: -20%;
 }
-#upside-down {
-    position: absolute;
-    z-index: 3;
-    margin: 0 auto;
-    top: 45%;
-    left: -25%;
-}
-.more {
-    background-color: #85689a;
-    color: white;
-}
+.upside-down {
+        position: absolute;
+        z-index: 3;
+        margin: 0 auto;
+        top: 45%;
+        left: -20%;
+} 
