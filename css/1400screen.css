@@ -427,7 +427,7 @@
         justify-content: center;
     }
     .social-media-list {
-        width: 52vw;
+        width: 72vw;
         margin: 0 auto;
         display: flex;
         flex-direction: row;
@@ -439,7 +439,7 @@
         opacity: 0.8;
     }
     .sign-up-and-subscribe {
-        width: 56.25vw;
+        width: 76.25vw;
         margin: 0 auto;
         display: flex;
         flex-direction: row;
@@ -474,7 +474,7 @@
     /* Space for anything else in 5th section! */
 
     .nav-menu-bottom {
-        max-width: 71vw;
+        max-width: 100vw;
         margin: 0 auto;
     }
     .nav-list-bottom {
