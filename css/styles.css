@@ -317,6 +317,9 @@ i {
     margin-top: 0px;
     padding-top: 19.44vh;
 }
+.fourth-section a{
+    color: white;
+}
 .fourth-section a:visited{
     color: white;
 }
@@ -339,9 +342,6 @@ i {
 }
 .categories-list a:hover{
     border-bottom: #85689a 0.7rem solid;
-}
-.categories-list a{
-    color: white;
 }
 .categories-grid {
     display: grid;
