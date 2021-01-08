@@ -39,7 +39,8 @@ i {
     color: #85689a;
 }
 .nav-menu a:hover {
-    opacity: 0.8;
+    border-bottom: #85689a 0.7rem solid;
+    opacity: 1;
 }
 .header-content {
     max-width: 71vw;
@@ -206,7 +207,7 @@ i {
 }
 .zig-zag {
     position: absolute;
-    right: 0%;
+    right: 30%;
     bottom: 0%;
     width: 382px;
     height: 133px;
@@ -316,16 +317,13 @@ i {
     margin-top: 0px;
     padding-top: 19.44vh;
 }
-.fourth-section a{
-    color: white;
-}
 .fourth-section a:visited{
     color: white;
 }
 .everything-grided {
     display: grid;
     width: 75vw;
-    grid-template-columns: 40vw 15.4vw;
+    grid-template-columns: 1fr 1fr;
     margin: 0 auto;
     align-items: center;
 }
@@ -359,9 +357,12 @@ i {
     left: 0;
     opacity: 0.7;
 }
+.first-layered-img:hover {
+    opacity: 0;
+}
 #dots-for-img {
     position: absolute;
-    right: 5%;
+    right: 15%;
     top: 45%;
     z-index: 3;
     font-size: 2.5rem;
@@ -461,7 +462,8 @@ i {
     margin: 0 auto;
 }
 .nav-list-bottom {
-    margin: 0 auto;
+    position: absolute;
+    bottom: 0%;
     font-size: 3rem;
     list-style: none;
     display: flex;
