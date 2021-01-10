@@ -80,6 +80,7 @@ i {
     position: relative;
     width: 520px;
     height: 688px;
+    background: url("img/photo art.png");
 }
 .right-block {
     font-size: 2.5625rem;
@@ -116,6 +117,25 @@ i {
     margin: 0 auto;
     top: 45%;
     left: -20%;
+}
+.view-more-button {
+    position: absolute;
+    bottom: 0;
+    left: -20%;
+    color: white;
+    background-color: #85689a;
+    left: 40.5vw;
+    bottom: 2.5vh;
+    font-size: 1.5744rem;
+    width: 18vw;
+    height: 6.5vh;
+    display: flex;
+    flex-direction: row;
+    column-gap: 2vw;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1.97vw;
+    padding-left: 1.45vw;
 }
 .second-section {
     height: 1080px;
@@ -204,13 +224,15 @@ i {
     z-index: 1;
     width: 935px;
     height: 989px;
+    background-color: #85689a;
+    border-radius: 50%;
 }
 .zig-zag {
     position: absolute;
     right: 30%;
-    bottom: 0%;
-    width: 382px;
-    height: 133px;
+    bottom: 22%;
+    width: 19.9vw;
+    height: 14.3vh;
     z-index: 3;
 }
 .third-section {
@@ -223,17 +245,11 @@ i {
 .grid-table {
     border: solid #85689a 0.5rem;
     display: grid;
-    margin-top: 4.16vh;
-    margin-left: 4.16vw;
-    margin-right: 4.16vw;
-    margin-bottom: 4.16vh;
+    margin: 4.16vh 4.16vw 4.16vh 4.16vw;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
-    padding-left: 9.8vw;
-    padding-top: 7.4vh;
-    padding-bottom: 7.4vh;
-    padding-right: 4vw;
+    padding: 7.4vh 4vw 7.4vh 9.8vw;
     grid-gap: 6.4vh;
     height: 980px;
 }
@@ -273,7 +289,7 @@ i {
     top: 53vh;
     right: 11vw;
 }
-.first-photo, .second-photo, .third-photo, .fourth-photo, .fifth-photo, .sixth-photo {
+.grid-photo {
     position: relative;
 }
 #arrow-for-pics {
@@ -286,6 +302,10 @@ i {
     color: white;
     padding-top: 1vh;
     text-align: center;
+}
+#arrow-for-pics:hover{
+    background-color: white;
+    color: #85689a;
 }
 .see-more-button {
     position: absolute;
@@ -348,17 +368,19 @@ i {
     grid-template-columns: 1fr 1fr;
     grid-gap: 4.6vh;
 }
-.first-location, .second-location, .third-location, .fourth-location {
+.location {
     position: relative;
 }
 .second-layered-img {
     z-index: 1;
+    mix-blend-mode: hard-light;
 }
 .first-layered-img {
     position: absolute;
     z-index: 2;
     left: 0;
     opacity: 0.7;
+    mix-blend-mode: hard-light;
 }
 .first-layered-img:hover {
     opacity: 0;
@@ -371,14 +393,23 @@ i {
     font-size: 2.5rem;
 }
 .learn-more-button {
-    background-color: #85689a;
     width: 16.6vw;
     height: 3.7vh;
     position: absolute;
-    bottom: 10vh;
-    left: 40vw;
+    color: white;
+    background-color: #85689a;
+    left: 40.5vw;
+    bottom: 2.5vh;
+    font-size: 1.5744rem;
+    width: 18vw;
+    height: 6.5vh;
     display: flex;
+    flex-direction: row;
+    column-gap: 2vw;
     align-items: center;
+    justify-content: center;
+    padding-left: 1.97vw;
+    padding-left: 1.45vw;
 }
 .learn-more-link {
     color: white;
