@@ -257,7 +257,8 @@ i {
     width: 337px;
     height: 368px;
 }
-.highlights-of-2019-left {
+.highlights-of-2019-left::before{
+    content: "Highlights of 2019";
     background-color: white;
     color: #85689a;
     position: absolute;
@@ -268,7 +269,8 @@ i {
     padding: 0vh 3vh 0vh 3vh;
     text-align: center;
 }
-.highlights-of-2019-right {
+.highlights-of-2019-right::before{
+    content: "Highlights of 2019";
     background-color: white;
     color: #85689a;
     position: absolute;
@@ -292,18 +294,23 @@ i {
 .grid-photo {
     position: relative;
 }
-#arrow-for-pics {
+.link-for-arrow::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 5vh;
+    content: "\f30b";
     position: absolute;
-    width: 2.44vw;
-    height: 4.35vh;
-    bottom: 1vh;
-    right: 4.5vw;
     background-color: #85689a;
     color: white;
-    padding-top: 1vh;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3vw;
+    height: 6vh;
+    bottom: 2vh;
+    right: -1vw;
 }
-#arrow-for-pics:hover{
+.link-for-arrow:hover::before{
     background-color: white;
     color: #85689a;
 }
@@ -438,7 +445,13 @@ i {
 .fifth-section ul, li{
     list-style: none;
 }
-.eye-image {
+.eye-open {
+    margin-top: 2.3vh;
+    margin-bottom: 9.25vh;
+    display: flex;
+    justify-content: center;
+}
+.eye-closed {
     margin-top: 2.3vh;
     margin-bottom: 9.25vh;
     display: flex;
