@@ -120,14 +120,14 @@ i {
 }
 .view-more-button {
     position: absolute;
-    bottom: 0;
-    left: -20%;
+    bottom: 40%;
+    left: 80%;
     color: white;
     background-color: #85689a;
     left: 40.5vw;
     bottom: 2.5vh;
-    font-size: 1.5744rem;
-    width: 18vw;
+    font-size: 1.2rem;
+    width: 16.6vw;
     height: 6.5vh;
     display: flex;
     flex-direction: row;
@@ -136,6 +136,11 @@ i {
     justify-content: center;
     padding-left: 1.97vw;
     padding-left: 1.45vw;
+    z-index: 5;
+}
+.view-more-button:hover{
+    background: white;
+    color: #85689a;
 }
 .second-section {
     height: 1080px;
@@ -308,7 +313,7 @@ i {
     width: 3vw;
     height: 6vh;
     bottom: 2vh;
-    right: -1vw;
+    right: 4.5vw;
 }
 .link-for-arrow:hover::before{
     background-color: white;
@@ -418,15 +423,9 @@ i {
     padding-left: 1.97vw;
     padding-left: 1.45vw;
 }
-.learn-more-link {
-    color: white;
-    text-decoration: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 2.3vw;
-    padding-right: 1.3vw;
-    font-size: 1.5625rem;
+.learn-more-button:hover{
+    background-color: white;
+    color: #85689a;
 }
 .fifth-section {
     height: 1080px;
@@ -445,17 +444,41 @@ i {
 .fifth-section ul, li{
     list-style: none;
 }
-.eye-open {
-    margin-top: 2.3vh;
-    margin-bottom: 9.25vh;
+.eye-image {
+    position: relative;
     display: flex;
     justify-content: center;
 }
-.eye-closed {
+.eye-open {
+    width: 10vw;
     margin-top: 2.3vh;
-    margin-bottom: 9.25vh;
-    display: flex;
-    justify-content: center;
+    margin-bottom: 2vh;
+    position: absolute;
+    animation: open-up 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: step-start;
+}
+.eye-closed {
+    width: 10vw;
+    margin-top: 2.3vh;
+    margin-bottom: 2vh;
+    position: relative;
+    animation: close-down 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: step-start;
+}
+@keyframes open-up {
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes close-down {
+    75% {
+        opacity: 0;
+    }
 }
 .social-media-list {
     width: 52vw;
@@ -485,6 +508,13 @@ i {
     justify-content: center;
     align-items: center;
 }
+.sign-up-news-button a:hover{
+    background-color: #85689a;
+    color: white;
+}
+.sign-up-news-button:hover{
+    background-color: #85689a;
+}
 .subscribe-button {
     background-color: #85689a;
     color: white;
@@ -492,6 +522,10 @@ i {
     height: 6vh;
     padding-left: 1.66vw;
     padding-right: 4vw;
+}
+.subscribe-button:hover{
+    background-color: white;
+    color: #85689a;
 }
 #subscribe {
     color: white;
@@ -501,12 +535,30 @@ i {
     justify-content: space-between;
     font-size: 1.875rem;
 }
+#subscribe:hover {
+    color: #85689a;
+}
+
+
+.visit-conditions-grid {
+    display: grid;
+    grid-template-columns: 740px 740px;
+    margin: 0 auto;
+    width: 72vw;
+    justify-content: center;
+    text-align: center;
+}
+
 
 /* Space for anything else in 5th section! */
 
 .nav-menu-bottom {
-    max-width: 100vw;
+    width: 72vw;
     margin: 0 auto;
+}
+.nav-menu-bottom a:hover {
+    border-bottom: #85689a 0.7rem solid;
+    opacity: 1;
 }
 .nav-list-bottom {
     margin: 0 auto;

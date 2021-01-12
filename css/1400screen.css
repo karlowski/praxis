@@ -88,7 +88,8 @@
     }
     .current-exhibition {
         width: 39vw;
-        height: 5.83vh;position: absolute;
+        height: 5.83vh;
+        position: absolute;
         z-index: 4;
         margin: 0 auto;
         top: 45%;
@@ -577,7 +578,7 @@
     /* Space for anything else in 5th section! */
 
     .nav-menu-bottom {
-        max-width: 99vw;
+        width: 99vw;
     }
     .nav-menu-bottom a:hover {
         border-bottom: #85689a 0.7rem solid;
