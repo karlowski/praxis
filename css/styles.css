@@ -126,7 +126,7 @@ i {
     background-color: #85689a;
     left: 40.5vw;
     bottom: 2.5vh;
-    font-size: 1.2rem;
+    font-size: 2.6vh;
     width: 16.6vw;
     height: 6.5vh;
     display: flex;
@@ -192,15 +192,13 @@ i {
 .visit-description p{
     margin-bottom: 1.25vh;
 }
-.buy-now-button {
+.buy-now-button a{
     width: 18.2vw;
     height: 4.6vh;
     font-size: 2rem;
     background-color: #85689a;
     margin-left: 7vw;
     margin-bottom: 5.2vh;
-}
-.buy-now-button a{
     color: white;
     text-decoration: none;
     display: flex;
@@ -208,6 +206,10 @@ i {
     align-items: center;
     padding-left: 2.3vw;
     padding-right: 1.3vw;
+}
+.buy-now-button a:hover {
+    background-color: white;
+    color: #85689a;
 }
 .statue-and-environment {
     right: 0%;
@@ -404,7 +406,7 @@ i {
     z-index: 3;
     font-size: 2.5rem;
 }
-.learn-more-button {
+.learn-more-button a{
     width: 16.6vw;
     height: 3.7vh;
     position: absolute;
@@ -423,12 +425,12 @@ i {
     padding-left: 1.97vw;
     padding-left: 1.45vw;
 }
-.learn-more-button:hover{
+.learn-more-button a:hover{
     background-color: white;
     color: #85689a;
 }
 .fifth-section {
-    height: 1080px;
+    min-height: 1080px;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.2rem;
     position: relative;
@@ -436,32 +438,29 @@ i {
 }
 .fifth-section a{
     text-decoration: none;
-    color: #85689a;
-}
-.fifth-section a:visited{
-    color: #85689a;
 }
 .fifth-section ul, li{
     list-style: none;
+}
+.fifth-section ul a:visited{
+    color: #85689a;
 }
 .eye-image {
     position: relative;
     display: flex;
     justify-content: center;
+    margin-top: 2.3vh;
+    margin-bottom: 9.25vh;
 }
 .eye-open {
-    width: 10vw;
-    margin-top: 2.3vh;
-    margin-bottom: 2vh;
+    width: 12.5vw;
     position: absolute;
     animation: open-up 1.5s;
     animation-iteration-count: infinite;
     animation-timing-function: step-start;
 }
 .eye-closed {
-    width: 10vw;
-    margin-top: 2.3vh;
-    margin-bottom: 2vh;
+    width: 12.5vw;
     position: relative;
     animation: close-down 1.5s;
     animation-iteration-count: infinite;
@@ -489,8 +488,8 @@ i {
     font-size: 2.625rem;
 }
 .social-media-list a:hover{
-    color: #85689a;
-    opacity: 0.8;
+    border-bottom: #85689a 0.7rem solid;
+    opacity: 1;
 }
 .sign-up-and-subscribe {
     width: 56.25vw;
@@ -498,12 +497,16 @@ i {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 7vh;
 }
-.sign-up-news-button {
+.sign-up-and-subscribe a:visited{
+    text-decoration: none;
+}
+.sign-up-news-button a{
     width: 34.3vw;
     height: 6vh;
     border: 0.2rem solid #85689a;
-    font-size: 1.875rem;
+    font-size: 2.77vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -514,32 +517,25 @@ i {
 }
 .sign-up-news-button:hover{
     background-color: #85689a;
+    color: white;
 }
-.subscribe-button {
+.subscribe {
     background-color: #85689a;
     color: white;
     width: 19.79vw;
     height: 6vh;
     padding-left: 1.66vw;
     padding-right: 4vw;
-}
-.subscribe-button:hover{
-    background-color: white;
-    color: #85689a;
-}
-#subscribe {
-    color: white;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    font-size: 1.875rem;
+    font-size: 2.77vh;
 }
-#subscribe:hover {
+.subscribe:hover {
     color: #85689a;
+    background-color: white;
 }
-
-
 .visit-conditions-grid {
     display: grid;
     grid-template-columns: 740px 740px;
@@ -547,6 +543,22 @@ i {
     width: 72vw;
     justify-content: center;
     text-align: center;
+    font-size: 3.33vh;
+    margin-top: 6.5vh;
+}
+.admission-explanation {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6vh;
+}
+.working-hours-schedule {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.85vh;
+    margin-bottom: 9.25vh;
+}
+.working-hours-line {
+    margin-bottom: 6vh;
 }
 
 

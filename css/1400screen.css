@@ -457,11 +457,11 @@
         position: relative;
         display: flex;
         justify-content: center;
+        margin-top: 2.3vh;
+        margin-bottom: 9.25vh;
     }
     .eye-open {
         width: 10vw;
-        margin-top: 2.3vh;
-        margin-bottom: 2vh;
         position: absolute;
         animation: open-up 1.5s;
         animation-iteration-count: infinite;
@@ -469,8 +469,6 @@
     }
     .eye-closed {
         width: 10vw;
-        margin-top: 2.3vh;
-        margin-bottom: 2vh;
         position: relative;
         animation: close-down 1.5s;
         animation-iteration-count: infinite;
@@ -492,7 +490,6 @@
     .social-media-list {
         position: relative;
         width: 72vw;
-        margin-bottom: 3vh;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -505,15 +502,14 @@
     .sign-up-and-subscribe {
         width: 76.25vw;
         margin: 0 auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
     .sign-up-news-button {
         width: 34.3vw;
         height: 6vh;
         border: 0.2rem solid #85689a;
-        font-size: 1.875rem;
+        font-size: 2.77vh;
         display: flex;
         justify-content: center;
         align-items: center;
