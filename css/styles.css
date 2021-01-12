@@ -250,7 +250,7 @@ i {
     position: relative;
 }
 .grid-table {
-    border: solid #85689a 0.5rem;
+    border: solid #85689a 1vh;
     display: grid;
     margin: 4.16vh 4.16vw 4.16vh 4.16vw;
     grid-template-columns: 1fr 1fr 1fr;
@@ -389,6 +389,17 @@ i {
     z-index: 1;
     mix-blend-mode: hard-light;
 }
+.dots-for-photo::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f142";
+    position: absolute;
+    right: 15%;
+    top: 40%;
+    z-index: 3;
+    font-size: 2.5rem;
+    opacity: 1;
+}
 .first-layered-img {
     position: absolute;
     z-index: 2;
@@ -430,7 +441,7 @@ i {
     color: #85689a;
 }
 .fifth-section {
-    min-height: 1080px;
+    height: 1080px;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.2rem;
     position: relative;
