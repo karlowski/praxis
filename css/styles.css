@@ -449,6 +449,7 @@ i {
 }
 .fifth-section a{
     text-decoration: none;
+    color: #85689a;
 }
 .fifth-section ul, li{
     list-style: none;
@@ -571,10 +572,6 @@ i {
 .working-hours-line {
     margin-bottom: 6vh;
 }
-
-
-/* Space for anything else in 5th section! */
-
 .nav-menu-bottom {
     width: 72vw;
     margin: 0 auto;
