@@ -161,8 +161,6 @@
         font-size: 9.25vh;
         max-width: 85.416vw;
         margin: 0 auto;
-        /*padding-top: 9.2vh;
-        padding-bottom: 9.2vh;*/
         z-index: 5;
         position: relative;
         letter-spacing: 0.4rem;
@@ -254,7 +252,7 @@
         position: relative;
     }
     .grid-table {
-        border: solid #85689a 0.5rem;
+        border: solid #85689a 1vh;
         display: grid;
         grid-template-columns: 17.55vw 17.55vw 17.55vw;
         justify-content: center;
@@ -329,16 +327,15 @@
     }
     .see-more-button {
         position: absolute;
-        background-color: #85689a;
-        border: solid 10px white;
         left: 40.5vw;
         bottom: 2.5vh;
-        font-size: 1.5744rem;
+    }
+    .see-more-button a{ 
+        background-color: #85689a;
+        border: solid 10px white;
+        font-size: 2.314vh;
         width: 18vw;
         height: 6.5vh;
-    }
-    .see-more-button a{
-        text-decoration: none;
         color: white;
         display: flex;
         column-gap: 2vw;
@@ -346,6 +343,10 @@
         justify-content: center;
         padding-left: 1.97vw;
         padding-left: 1.45vw;
+    }
+    .see-more-button a:hover {
+        background-color: white;
+        color: #85689a;
     }
     .fourth-section {
         height: 768px;
@@ -395,6 +396,17 @@
         width: auto;
         mix-blend-mode: hard-light;
     }
+    .dots-for-photo::before {
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        content: "\f142";
+        position: absolute;
+        right: 5%;
+        top: 40%;
+        z-index: 3;
+        font-size: 2.5rem;
+        opacity: 1;
+    }
     .first-layered-img {
         position: absolute;
         z-index: 2;
@@ -406,14 +418,7 @@
     .first-layered-img:hover {
         opacity: 0;
     }
-    #dots-for-img {
-        position: absolute;
-        right: 5%;
-        top: 40%;
-        z-index: 3;
-        font-size: 2.5rem;
-    }
-    .learn-more-button {
+    .learn-more-button a{
         width: 16.6vw;
         height: 3.7vh;
         position: absolute;
@@ -432,36 +437,35 @@
         padding-left: 1.97vw;
         padding-left: 1.45vw;
     }
-    .learn-more-button:hover{
+    .learn-more-button a:hover{
         background: white;
         color: #85689a;
     }
     .fifth-section {
         height: 768px;
-        font-family: 'Roboto', sans-serif;
         letter-spacing: 0.2rem;
         position: relative;
         color: #85689a;
     }
     .fifth-section a{
         text-decoration: none;
-        color: #85689a;
     }
     .fifth-section a:visited{
-        color: #85689a;
+        text-decoration: none;
     }
     .fifth-section ul, li{
+        color: #85689a;
         list-style: none;
     }
     .eye-image {
         position: relative;
         display: flex;
         justify-content: center;
+        margin-top: 2.3vh;
+        margin-bottom: 9.25vh;
     }
     .eye-open {
         width: 10vw;
-        margin-top: 2.3vh;
-        margin-bottom: 2vh;
         position: absolute;
         animation: open-up 1.5s;
         animation-iteration-count: infinite;
@@ -469,8 +473,6 @@
     }
     .eye-closed {
         width: 10vw;
-        margin-top: 2.3vh;
-        margin-bottom: 2vh;
         position: relative;
         animation: close-down 1.5s;
         animation-iteration-count: infinite;
@@ -492,7 +494,6 @@
     .social-media-list {
         position: relative;
         width: 72vw;
-        margin-bottom: 3vh;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -505,15 +506,16 @@
     .sign-up-and-subscribe {
         width: 76.25vw;
         margin: 0 auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 40vw 40vw;
+        margin-top: 2vh;
+        justify-items: center;
     }
     .sign-up-news-button {
         width: 34.3vw;
         height: 6vh;
         border: 0.2rem solid #85689a;
-        font-size: 1.875rem;
+        font-size: 2.77vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -526,27 +528,21 @@
     .sign-up-news-button:hover{
         background-color: #85689a;
     }
-    .subscribe-button {
+    .subscribe {
         background-color: #85689a;
         color: white;
         width: 19.79vw;
         height: 6vh;
         padding-left: 1.66vw;
         padding-right: 4vw;
-    }
-    .subscribe-button:hover{
-        background-color: white;
-        color: #85689a;
-    }
-    #subscribe {
-        color: white;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        font-size: 1.875rem;
+        font-size: 2.77vh;
     }
     #subscribe:hover {
+        background-color: white;
         color: #85689a;
     }
     .visit-conditions {
@@ -566,7 +562,10 @@
         display: flex;
         flex-direction: column;
         row-gap: 3vh;
-        font-size: 5.5vh;
+        font-size: 4.5vh;
+    }
+    .working-hours-schedule {
+        font-size: 4.5vh;
     }
     .working-hours-line {
         margin-bottom: 5vh;
@@ -574,9 +573,6 @@
     .working-schedule-item {
         row-gap: 2vh;
     }
-
-    /* Space for anything else in 5th section! */
-
     .nav-menu-bottom {
         width: 99vw;
     }
