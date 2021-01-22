@@ -79,6 +79,14 @@ article p {
     margin: 0 auto;
     font-size: 1.8rem;
 }
+article h2::selection {
+    color: #033f40;
+    background-color: #e7e0c3;
+}
+article p::selection {
+    color: #033f40;
+    background-color: #e7e0c3;
+}
 #portfolio_table {
     width: 99vw;
     height: 100vh;
