@@ -3,7 +3,6 @@
     margin: 0;
 }
 body {
-    /*font-family: 'Architects Daughter', cursive;*/
     font-family: 'Amatic SC', cursive;
 }
 a {
@@ -41,8 +40,8 @@ li:hover {
     width: 99vw;
     height: 100vh;
     padding: 15vh 0vw 15vh 27vw;
-    background: url("https://img5.goodfon.ru/wallpaper/nbig/a/b3/painting-chinese-paintings-art-6.jpg");
-    background-size: cover;
+    /*background: url("https://img5.goodfon.ru/wallpaper/nbig/a/b3/painting-chinese-paintings-art-6.jpg");
+    background-size: cover;*/
 }
 .portfolio_grid {
     display: grid;
@@ -95,8 +94,8 @@ li:hover {
 }
 .information_table {
     padding: 15vh 0vw 15vh 10vw;
-    background: url("https://img5.goodfon.com/wallpaper/nbig/a/1b/painting-chinese-paintings-art-20.jpg");
-    background-size: cover;
+    /*background: url("https://img5.goodfon.com/wallpaper/nbig/a/1b/painting-chinese-paintings-art-20.jpg");
+    background-size: cover;*/
 }
 article {
     color: #082d30;
