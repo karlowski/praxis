@@ -3,7 +3,6 @@
     margin: 0;
 }
 body {
-    /*font-family: 'Architects Daughter', cursive;*/
     font-family: 'Amatic SC', cursive;
 }
 a {
@@ -37,12 +36,63 @@ li {
 li:hover {
     transform: rotate(360deg);
 }
+.contact {
+    width: 5vw;
+    height: 10vh;
+    font-size: 0.5vh;
+    position: fixed;
+    right: 5%;
+    top: 15%;
+    border-radius: 50%;
+    background-color: #033f40;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-out;
+}
+.contact:hover {
+    width: 15vw;
+    height: 30vh;
+    font-size: 2rem;
+    transition: 0.5s ease-out;
+}
+.contact a:hover {
+    text-decoration: line-through;
+}
+.information_table {
+    padding: 15vh 0vw 15vh 10vw;
+    /*background: url("https://img5.goodfon.com/wallpaper/nbig/a/1b/painting-chinese-paintings-art-20.jpg");
+    background-size: cover;*/
+}
+article {
+    color: #082d30;
+    margin-bottom: 10vh;
+    text-align: center;
+}
+article h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15vh;
+}
+article p {
+    width: 60vw;
+    margin: 0 auto;
+    font-size: 1.8rem;
+}
+article h2::selection {
+    color: #033f40;
+    background-color: #e7e0c3;
+}
+article p::selection {
+    color: #033f40;
+    background-color: #e7e0c3;
+}
 #portfolio_table {
     width: 99vw;
     height: 100vh;
     padding: 15vh 0vw 15vh 27vw;
-    background: url("https://img5.goodfon.ru/wallpaper/nbig/a/b3/painting-chinese-paintings-art-6.jpg");
-    background-size: cover;
+    /*background: url("https://img5.goodfon.ru/wallpaper/nbig/a/b3/painting-chinese-paintings-art-6.jpg");
+    background-size: cover;*/
 }
 .portfolio_grid {
     display: grid;
@@ -68,45 +118,4 @@ li:hover {
     font-size: 2.5rem;
     transform: rotate(360deg);
     transition: 0.5s ease-out;
-}
-.contact {
-    width: 5vw;
-    height: 5vh;
-    font-size: 0.5vh;
-    position: fixed;
-    right: 5%;
-    top: 15%;
-    border-radius: 50%;
-    background-color: #033f40;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s ease-out;
-}
-.contact:hover {
-    width: 15vw;
-    height: 30vh;
-    font-size: 2rem;
-    transition: 0.5s ease-out;
-}
-.contact a:hover {
-    text-decoration: line-through;
-}
-.information_table {
-    padding: 15vh 0vw 15vh 10vw;
-    background: url("https://img5.goodfon.com/wallpaper/nbig/a/1b/painting-chinese-paintings-art-20.jpg");
-    background-size: cover;
-}
-article {
-    color: #082d30;
-    margin-bottom: 10vh;
-    text-align: center;
-}
-article h2 {
-    font-size: 2.5rem;
-    margin-bottom: 15vh;
-}
-article p {
-    font-size: 1.8rem;
 }
